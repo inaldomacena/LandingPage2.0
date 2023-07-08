@@ -11,39 +11,45 @@
     />
     <link rel="shortcut icon" href="/imagens/piano.png" type="image/x-icon" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/responsivo.css" />
     <title>Tom's e Jazz School</title>
   </head>
   <body>
     <header>
-      <img src="./imagens/logo.svg" alt="Tom's Jass School" />
-      <nav class="nt-1 mx-auto">
-        <a href="#">Inicio</a>
-        <a href="#">Cursos</a>
-        <a href="#">Eventos</a>
-        <a href="#">Contato</a>
-      </nav>
-      <a href="#" class="button nt-1 nx-auto">Se inscreva </a>
+      <div class="container">
+        <img src="./imagens/logo.svg" alt="Tom's Jass School" />
+        <nav class="nt-1 mx-auto">
+          <a href="#">Inicio</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <a href="#" class="button nt-1 nx-auto">Se inscreva </a>
+      </div>
     </header>
     <main>
-      <section class="hero-section">
-        <img src="./imagens/hero-img.svg" alt="Banda de Jazz" />
-        <div>
-          <h1 class="nt-2">
-            Crie algo
-            <span class="text-primary decoration">impactante </span> com música
-          </h1>
-          <p class="nt-2 nb-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
-            porro saepe esse quae quod laudantium ut asperiores obcaecati
-            corporis minus. Tempora enim ullam magni laborum soluta eaque
-            ratione provident minus?
-          </p>
-          <a href="#" class="button">Comece agora</a>
+      <section class="hero-section ">
+        <div class="container row-reverse">
+          <img src="./imagens/hero-img.svg" alt="Banda de Jazz" />
+          <div>
+            <h1 class="nt-2">
+              Crie algo
+              <span class="text-primary decoration">impactante </span> com
+              música
+            </h1>
+            <p class="nt-2 nb-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+              porro saepe esse quae quod laudantium ut asperiores obcaecati
+              corporis minus. Tempora enim ullam magni laborum soluta eaque
+              ratione provident minus?
+            </p>
+            <a href="#" class="button">Comece agora</a>
+          </div>
         </div>
       </section>
       <section class="courses-section">
         <div class="cards">
-          <article>
+          <article class="card">
             <img src="./imagens/piano.png" alt="Icone de teclas do piano" />
             <strong>Piano popular</strong>
             <p>
@@ -59,7 +65,7 @@
               />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="./imagens/clef.png" alt="Icone da clave de sol" />
             <strong>Teoria musical</strong>
             <p>
@@ -75,7 +81,7 @@
               />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="./imagens/sax.png" alt="Icone de saxofone" />
             <strong>Sax alto</strong>
             <p>
@@ -91,7 +97,7 @@
               />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="./imagens/drums.png" alt="Icone de bateria" />
             <strong>Bateria</strong>
             <p>
@@ -107,13 +113,16 @@
               />
             </a>
           </article>
-          <h2>E <span class="text-primary">varios</span> outros</h2>
-          <a href="#">Conhecer os cursos</a>
+          <h2 class="text-center">
+            E <span class="text-primary">vários</span> outros
+          </h2>
+          <a href="#" class="mx-auto">Conhecer os cursos</a>
         </div>
       </section>
     </main>
     <footer>
-      <div>
+      <div class="container">
+        <div class="about-column">
         <img src="./imagens/logo.svg" alt="Tom's Jazz School" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rerum
@@ -121,20 +130,24 @@
           porro? Eum aut magni consequatur fuga, a incidunt vitae placeat?
         </p>
       </div>
-      <nav>
+    </div>
+      <nav class="nb-2">
         <a href="#">Inicio</a>
         <a href="#">Cursos</a>
         <a href="#">Eventos</a>
         <a href="#">Contato</a>
       </nav>
-      <form>
-        <label for="email">Receba materias gratuitos no seu email</label>
+      <form class="newsletter-form">
+        <label for="email" class="nb-1"
+          >Receba materias gratuitos no seu email</label
+        >
         <input
           type="text"
           name="email"
           id="email "
-          placeholder="Digite sseu email"
+          placeholder="Digite seu email"
         />
+        <button class="button nb-2">Quero receber</button>
       </form>
     </footer>
   </body>
