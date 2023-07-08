@@ -25,33 +25,36 @@
   }
 }
 
+@media screen and (mix-width: 72rem) {
+  h1,
+  h2 {
+    font-size: 4rem;
+  }
+  .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 72rem;
+  }
 
-@media screen and (mix-width: 72rem){
-    .container{
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
-        max-width: 72rem;
-    }
+  .container .row-reverse {
+    flex-direction: row-reverse;
+  }
 
+  .about-column p {
+    flex: 2;
+  }
 
-     .container .row-reverse{
-        flex-direction: row-reverse;
-     }
+  .footer nav {
+    flex: 1;
+  }
 
-
-     .about-column p {
-        flex: 2;
-     }
-
-     .footer nav{
-        flex: 1;
-     }
-
-     .newsletter-form{
-        flex: 3;
-     }
-
-
-
+  .newsletter-form {
+    flex: 3;
+  }
+}
+@media screen and(min-width:90rem) {
+  .container {
+    max-width: 80rem;
+  }
 }
